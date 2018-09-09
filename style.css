@@ -1,0 +1,89 @@
+body {
+    background-color: lightgrey;
+}
+
+div {
+    background-color: white;
+    padding: 10px;
+}
+
+.container-fluid, .row {
+    background-color: transparent;
+}
+
+.content {
+    margin: 10px;
+}
+
+.center_visuals {
+    align-content: middle;
+}
+.row-bottom-margin {
+    margin-bottom: -20px;
+}
+
+.row-top-margin {
+    margin-top: -20px;
+}
+
+.container-fluid {
+    margin: 0px 20px 20px 20px;
+}
+
+.navbar {
+    min-height: 70px;
+    padding: 1px;
+}
+
+.navbar-header {
+    background-color: white;
+    padding: 0px;
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+#lat_button, .btn {
+    background-color: #0099e6;
+    color: white;
+}
+
+h1 {
+    color: #0099e6;
+}
+
+h3 {
+    color: #0099e6;
+}
+
+h4 {
+    color: #0099e6;
+    text-align: center;
+}
+
+#center_align {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+th {
+    background-color: lightgrey;
+}
+
+.parent-container {
+    display: flex;
+    margin: 0px 20px 20px 20px;
+}

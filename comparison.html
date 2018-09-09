@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+    <nav class = "navbar navbar-default">
+        <div class = "container-fluid">
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle collapsed" 
+                data-toggle = "collapse" 
+                data-target = "#bs-example-navbar-collapse-1" 
+                aria-expanded = "false"></button>
+            </div>
+
+            <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="./landing.html" id = "lat_button">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                            <strong style="font-size:125%;" style="text-align:center;">Latitude</strong>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class = "nav navbar-nav navbar-right">
+                    <li>
+                        <div class = "dropdown">
+                            <button class = "btn btn-primary dropdown-toggle" type = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plots
+                            <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="./visualization_temp.html">Temperature</a></li>
+                                <li><a href="./visualization_humidity.html">Humidity</a></li>
+                                <li><a href="./visualization_cloudiness.html">Cloudiness</a></li>
+                                <li><a href="./visualization_windspeed.html">Wind Speed</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="./data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Content of Website -->
+<div class = "container-fluid">
+    <div class = "row row-bottom-margin">
+        <div class = "col-md-12">
+            <h1>Comparison: Latitude vs X</h1>
+            <p>Click on any plot to get an in-depth analysis.</p>
+        </div>
+    </div>
+
+    <div class = "row row-bottom-margin">
+        <div class = "col-md-6">
+            <h4>
+                vs. Temperature
+            </h4>
+            <a href = "./visualization_temp.html"><center>
+                <img src = "lat_temp.png" alt = "Latitude_vs_Temperature"></center></a>
+        </div>
+        <div class = "col-md-6">
+            <h4>
+                vs. Humidity
+            </h4>
+            <a href = "./visualization_humidity.html"><center>
+                <img src = "lat_humid.png" alt = "Latitude_vs_Humidity"></center></a>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class = "col-md-6">
+            <h4>
+                vs. Cloudiness
+            </h4>
+            <a href = "./visualization_cloudiness.html"><center>
+                <img src = "lat_cloud.png" alt = "Latitude_vs_Cloudiness"></center></a>
+        </div>
+        <div class = "col-md-6">
+            <h4>
+                vs. Wind Speed
+            </h4>
+            <a href = "./visualization_windspeed.html"><center>
+                <img src = "lat_wind.png" alt = "Latitude_vs_Wind Speed"></center></a>
+        </div>
+    </div>
+</div>
+<!-- End of Content -->
+
+</body>
+</html>

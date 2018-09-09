@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+    <nav class = "navbar navbar-default">
+        <div class = "container-fluid">
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle collapsed" 
+                data-toggle = "collapse" 
+                data-target = "#bs-example-navbar-collapse-1" 
+                aria-expanded = "false"></button>
+            </div>
+
+            <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="./landing.html" id = "lat_button">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                            <strong style="font-size:125%;" style="text-align:center;">Latitude</strong>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class = "nav navbar-nav navbar-right">
+                    <li>
+                        <div class = "dropdown">
+                            <button class = "btn btn-primary dropdown-toggle" type = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plots
+                            <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="./visualization_temp.html">Temperature</a></li>
+                                <li><a href="./visualization_humidity.html">Humidity</a></li>
+                                <li><a href="./visualization_cloudiness.html">Cloudiness</a></li>
+                                <li><a href="./visualization_windspeed.html">Wind Speed</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="./data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-md-7 content">
+                <h3>Latitude vs. Wind Speed</h3>
+                <a href = "./visualization_windspeed.html">
+                    <img src = "lat_wind.png" alt = "Latitude_vs_Wind_Speed"></a>
+                <p>
+                    With the latitude vs wind speed graph, there seems to be no correlation 
+                    between latitude and wind speed. The only trend that's noticed in this 
+                    graph is that wind speed is usually below 15mph and the areas with high 
+                    winds are all over the world.
+                </p>
+                </div>
+            
+               
+
+            
+            
+            
+            <div class = "col-md-4 content">
+                <h4>Visualizations</h4>
+                <div class = "row">
+                <a href = "./visualization_temp.html">
+                    <img src = "lat_temp.png" alt = "Latitude_vs_Temperature" 
+                    width="150" height="150"></a>
+                <a href = "./visualization_humidity.html">
+                    <img src = "lat_humid.png" alt = "Latitude_vs_Humidity" 
+                    width="150" height="150"></a>
+                </div>
+                <div class = "row">
+                    <a href = "./visualization_cloudiness.html">
+                        <img src = "lat_cloud.png" alt = "Latitude_vs_Cloudiness" 
+                        width="150" height="150"></a>
+                    <a href = "./visualization_windspeed.html">
+                        <img src = "lat_wind.png" alt = "Latitude_vs_Wind_Speed" 
+                        width="150" height="150"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
