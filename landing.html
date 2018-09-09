@@ -39,9 +39,9 @@
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="./visualization_temp.html">Temperature</a></li>
-                                <li><a href="./visualization-image-2.html">Humidity</a></li>
-                                <li><a href="./visualization-image-3.html">Cloudiness</a></li>
-                                <li><a href="./visualization-image-4.html">Wind Speed</a></li>
+                                <li><a href="./visualization_humidity.html">Humidity</a></li>
+                                <li><a href="./visualization_cloudiness.html">Cloudiness</a></li>
+                                <li><a href="./visualization_windspeed.html">Wind Speed</a></li>
                             </ul>
                         </div>
                     </li>
@@ -56,8 +56,59 @@
         </div>
     </nav>
 
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-md-7 content">
+                <h3>Summary: Latitude vs. X</h3>
+                <br>
+                <br>
+                <a href = "./visualization_temp.html">
+                    <img src = "lat_temp.png" alt = "Latitude_vs_Temperature" height="200" width="200" style="display:inline-block;"></a>
+                <p>
+                    The purpose of this project is to prove that cities closer to the equator 
+                    are hotter than cities near the poles. In order to avoid bias in choosing 
+                    cities around the world, I have generated random numbers for latitudes and 
+                    longitudes and used CitiPy to find cities that match/closely resemble them. 
+                    After collecting all the cities, I used Open Weather Map's API to retrieve 
+                    data regarding these cities.
+                    <br><br>
+                    After analyzing 500+ random cities around the world comparing the distance 
+                    to the equator with temperature, humidity, cloudiness, and wind speed, 
+                    I have concluded that the cities that are closer to the equator tend to have 
+                    a higher temperature compared to cities closer to the poles. However, the 
+                    peak temperatures are from cities with latitutes around 20 degrees, which is 
+                    a little bit above the equator and that can be explained by weather patterns 
+                    experienced at the equator.
+                </p>
+                </div>
+            
+                
+
+            
+            
+            
+            <div class = "col-md-4 content">
+                <h4>Visualizations</h4>
+                <div class = "row">
+                <a href = "./visualization_temp.html">
+                    <img src = "lat_temp.png" alt = "Latitude_vs_Temperature" 
+                    width="150" height="150"></a>
+                <a href = "./visualization_humidity.html">
+                    <img src = "lat_humid.png" alt = "Latitude_vs_Humidity" 
+                    width="150" height="150"></a>
+                </div>
+                <div class = "row">
+                    <a href = "./visualization_cloudiness.html">
+                        <img src = "lat_cloud.png" alt = "Latitude_vs_Cloudiness" 
+                        width="150" height="150"></a>
+                    <a href = "./visualization_windspeed.html">
+                        <img src = "lat_wind.png" alt = "Latitude_vs_Wind_Speed" 
+                        width="150" height="150"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>
-
 </html>
